@@ -45,3 +45,11 @@ if ingredients_list:
         st.success(
         f'Your smoothie has been ordered , {name_on_order}.',
         icon="✅")
+
+
+# New section to display smoothiefroot nutriation information
+import requests  
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)
+
+
